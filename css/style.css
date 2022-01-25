@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -10,8 +8,8 @@
 /* 2. Menu
 /* 3. Header
 /* 4. About
-/* 5. Our Courses
-/* 6. Memberships
+/* 5. Courses
+/* 6. Membership
 /* 7. Benefits
 /* 8. Newsletter
 /* 9. Footer
@@ -20,17 +18,81 @@
 /**********************************/
 /* 0. Variables
 /**********************************/
+:root {
+	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+	
+	--clr--green-light: #0BF96A;
+	--clr--green-dark: #049A40;
+	--clr--pink-light: #F3A0FD;
+	--clr--pink-dark: #E10BF9;
+	--clr--white: #F5F5F5;
+}
+/**********************************/
 
 /**********************************/
-/* 1. Estilos gerais
+/* 1. General Styles
+/**********************************/
+body {
+	background-color: var(--clr--white);
+	font-family: var(--ff-primary);
+}
+
+a, a:hover, a:active, a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+hr {
+	border: none;
+	background-color: var(--clr--pink-dark);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
 /**********************************/
 
 /**********************************/
 /* 2. Menu
 /**********************************/
+.menu-bg {
+	background-color: var(--clr--green-light);
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.menu__logo {
+	margin: 10px;
+}
+
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav__link {
+	padding: 20px 10px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+/**********************************/
 
 /**********************************/
 /* 3. Header
+/**********************************/
+.intro {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+}
 /**********************************/
 
 /**********************************/
@@ -38,11 +100,11 @@
 /**********************************/
 
 /**********************************/
-/* 5. Our Courses
+/* 5. Courses
 /**********************************/
 
 /**********************************/
-/* 6. Memberships
+/* 6. Membership
 /**********************************/
 
 /**********************************/

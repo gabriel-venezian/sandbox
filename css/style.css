@@ -49,6 +49,22 @@ hr {
 	width: 140px;
 	margin: 20px auto;
 }
+
+p {
+	line-height: 21.82px;
+	padding: 10px;
+}
+
+.section__title {
+	text-align: left;
+	font-size: 3rem;
+	padding: 10px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
 /**********************************/
 
 /**********************************/
@@ -62,8 +78,8 @@ hr {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 960px;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: 0 4%;
 	flex-wrap: wrap;
 }
 
@@ -79,7 +95,7 @@ hr {
 .nav__link {
 	padding: 20px 10px;
 	margin-bottom: 10px;
-	font-size: 24px;
+	font-size: 1.3em;
 }
 /**********************************/
 
@@ -98,9 +114,49 @@ hr {
 /**********************************/
 /* 4. About
 /**********************************/
+.about {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.about-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.about-container__text {
+	flex: 6 1 160px;
+}
+
+.about-container__img {
+	flex: 1 1 350px;
+}
+/**********************************/
 
 /**********************************/
 /* 5. Courses
+/**********************************/
+.courses {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.courses-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.course {
+	width: 280px;
+	margin: 0 20px;
+}
+
+.course__title {
+	font-size: 1.5em;
+	margin: 10px 0 5px 10px;
+}
 /**********************************/
 
 /**********************************/
@@ -119,3 +175,4 @@ hr {
 /* 9. Footer
 /**********************************/
 
+/**********************************/

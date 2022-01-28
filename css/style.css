@@ -270,6 +270,54 @@ img {
 /**********************************/
 /* 7. Benefits
 /**********************************/
+.benefits {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.benefits-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.benefit {
+	max-width: 240px;
+	margin: 10px;
+}
+
+.benefit__title {
+	font-size: 1.7rem;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.benefit__title::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.benefit:nth-of-type(3n+1) .benefit__title::before {
+	background: var(--clr--green-light);
+}
+
+.benefit:nth-of-type(3n+2) .benefit__title::before {
+	background: var(--clr--pink-dark);
+}
+
+.benefit:nth-of-type(3n+3) .benefit__title::before {
+	background: var(--clr--green-dark);
+}
+
+@media (max-width: 800px) {
+	.benefit {
+		max-width: 220px;
+	}
+}
+/**********************************/
 
 /**********************************/
 /* 8. Newsletter

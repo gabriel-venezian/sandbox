@@ -4,7 +4,7 @@
 
 /**********************************/
 /* 0. Variables
-/* 1. Container
+/* 1. General Styles
 /* 2. Menu
 /* 3. Header
 /* 4. About
@@ -161,6 +161,110 @@ img {
 
 /**********************************/
 /* 6. Membership
+/**********************************/
+.membership-section {
+	background-color: var(--clr--pink-light);
+}
+
+.membership-container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.membership-section__title {
+	text-align: center;	
+	font-size: 3rem;
+	padding: 10px;
+}
+
+.membership__title {
+	font-size: 3rem;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.membership {
+	width: 290px;
+	margin: 10px 10px;
+	border: 2px solid var(--clr--green-light);
+}
+
+.membership__price {
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+}
+
+.membership__price sup {
+	position: relative;
+	font-size: 1.5rem;
+	top: -20px;
+}
+
+.membership__hr {
+	background-color: var(--clr--green-light);
+	width: 20px;
+	margin: 5px auto;
+}
+
+.membership-list {
+	max-width: 195px;
+	margin: 0 auto;
+}
+
+.membership-list__item {
+	margin: 10px 0;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+}
+
+.membership-list__item::before {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--clr--green-light);
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.membership__btn-join {
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid var(--clr--green-light)
+}
+
+.membership:last-child {
+	background-color: var(--clr--green-light);
+}
+
+.membership:last-child, .membership:last-child .membership__btn-join {
+	border: 2px solid var(--clr--pink-dark)
+}
+
+.membership:last-child .membership-list__item::before, .membership:last-child .membership__hr {
+	background: var(--clr--pink-dark)
+}
+
+@media (max-width: 800px) {
+	.membership:nth-child(3) {
+		order: -2;
+	}
+
+	.membership:nth-child(2) {
+		order: -1;
+	}
+}
 /**********************************/
 
 /**********************************/
